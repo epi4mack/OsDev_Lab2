@@ -77,10 +77,10 @@ if __name__ == '__main__':
 
         total_start = perf_counter()
         processes = []
-        event = multiprocessing.Event()
         
         for hash in hashes:
             t1 = perf_counter()
+            event = multiprocessing.Event()
 
             for i in range(num):
                 processes.append(multiprocessing.Process(target=bruteforce, args=(event, hash, alphabet[-i],)))
