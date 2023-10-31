@@ -21,7 +21,7 @@ def bruteforce(event=None, hash='', start_letter:str = 'a'):
 
     while True:
         if hashlib.sha256(current_string.encode()).hexdigest() == hash:
-            print(f"Найдено совпадение: {current_string}")
+            print(f"Найденный пароль: {current_string}")
             if event is not None: event.set()
             return
 
