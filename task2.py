@@ -1,9 +1,8 @@
 import string
 import multiprocessing
 import hashlib
-from time import perf_counter, time
+from time import perf_counter
 from os import system
-from sys import exit
 
 alphabet = string.ascii_lowercase
 
